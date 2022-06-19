@@ -5,7 +5,8 @@
          "es6",
          "DOM"
       ],
-      "target": "es5",
+      "target": "esnext",
+      "module": "commonjs",
       "moduleResolution": "node",
       "outDir": "./build",
       "emitDecoratorMetadata": true,
