@@ -1,6 +1,7 @@
 import { AppDataSource } from "./data-source"
 import "reflect-metadata";
 import express, { Express } from "express";
+import path from "path";
 import morgan from "morgan"
 import http from "http";
 import cors from "cors";
@@ -34,6 +35,12 @@ AppDataSource.initialize().then(async () => {
     });
 
     app.use(cors());
+
+    app.use(express.static(path.join(__dirname, 'public')));
+
+    app.get('*', (req:any, res: any)=>{
+        res.sendFile(path.join(__dirname, 'public/index.html'))
+    });
 
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
