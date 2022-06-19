@@ -13,6 +13,7 @@ import role from "./Modules/Roles/role_routes";
 import employee from "./Modules/Employees/employee_routes";
 import auth from "./Modules/Auth/auth"
 import task from "./Modules/Task/task_routes"
+import config from "./config/config";
 
 
 AppDataSource.initialize().then(async () => {
@@ -53,9 +54,8 @@ AppDataSource.initialize().then(async () => {
     app.use("/task", task);
 
     const httpServer = http.createServer(app);
-    const PORT: any = process.env.PORT ?? 6060;
-    httpServer.listen(PORT, () =>
-        console.log(`The server is running in port ${PORT}`)
+    httpServer.listen(config.port, () =>
+        console.log(`The server is running in port ${config.port}`)
     );
 
 
