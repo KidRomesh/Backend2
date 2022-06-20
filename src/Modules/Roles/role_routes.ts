@@ -1,6 +1,6 @@
 import express from "express";
-import { checkJwt } from "../middlewares/checkJwt";
-import { checkRole } from "../middlewares/checkRole";
+import { checkJwt } from "../checkJWT";
+import { checkRole } from "../checkRole";
 
 import role_controller from "./role_controller";
 

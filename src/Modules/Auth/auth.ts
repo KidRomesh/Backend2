@@ -1,6 +1,6 @@
 import { Router } from "express";
 import AuthController from "../../Modules/Auth/auth_controller";
-import { checkJwt } from "../middlewares/checkJwt";
+import { checkJwt } from "../checkJWT";
 
 const router = Router();
 //Login route

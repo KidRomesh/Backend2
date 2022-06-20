@@ -1,9 +1,8 @@
 import { Request, Response, NextFunction } from "express";
-import { AppDataSource } from "../../data-source";
+import { AppDataSource } from "../data-source";
 
-import { Employee } from "../../entity/Employee";
-import { Role } from "../../entity/Role";
-import { Student } from "../../entity/Student";
+import { Employee } from "../entity/Employee";
+
 
 export const checkRole = (roles: Array<string>) => {
   return async (req: Request, res: Response, next: NextFunction) => {
