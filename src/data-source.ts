@@ -11,7 +11,7 @@ import { Task } from "./entity/Task"
 
 export const AppDataSource = new DataSource({
     type: "mongodb",
-    url: "mongodb+srv://KidRomesh:Rdk2001@cluster0.wlumh3o.mongodb.net/test",
+    url: "mongodb+srv://KidRomesh:Rdk2001@cluster0.wlumh3o.mongodb.net/?retryWrites=true&w=majority",
     useNewUrlParser:true,
     synchronize: false,
     logging: true,
