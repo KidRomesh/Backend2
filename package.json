@@ -3,7 +3,7 @@
    "version": "0.0.1",
    "description": "Awesome project developed with TypeORM.",
    "type": "commonjs",
-   "engines": { "node": "16.15.0" },
+   
    "devDependencies": {
       "@types/node": "^16.11.41",
       "ts-node": "^10.7.0",
@@ -34,6 +34,7 @@
       "socket.io": "^4.5.0",
       "typeorm": "0.3.6"
    },
+   "engines": { "node": "16.15.0" },
    "scripts": {
      
       "start": "node dist/index.js",
