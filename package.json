@@ -37,7 +37,7 @@
    "engines": { "node": "16.15.0" },
    "scripts": {
      
-      "start": "node src/index.ts"
+      "start": "node --loader ts-node/esm ./index.ts"
       
      
    }
