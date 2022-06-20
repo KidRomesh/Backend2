@@ -9,9 +9,11 @@ import { Role } from "./entity/Role"
 import { Student } from "./entity/Student"
 import { Task } from "./entity/Task"
 
+const uri = process.env.MONGODB_URI;
+
 export const AppDataSource = new DataSource({
     type: "mongodb",
-    url: "mongodb+srv://KidRomesh:Rdk2001@cluster0.wlumh3o.mongodb.net/?retryWrites=true&w=majority",
+    url: uri,
     useNewUrlParser:true,
     synchronize: false,
     logging: true,
