@@ -1,4 +1,3 @@
-import { AppDataSource } from "./data-source"
 import "reflect-metadata";
 import express, { Express } from "express";
 import path from "path";
