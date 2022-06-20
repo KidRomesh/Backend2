@@ -37,10 +37,8 @@
    "engines": { "node": "16.15.0" },
    "scripts": {
      
-      "start": "tsc-node src/index.ts",
+      "start": "node index.ts"
       
-      "watch-node": "nodemon src/index.ts",
-      "watch-ts": "tsc -w",
-      "deploy": "git add . && git commit -m Heroku && git push heroku master"
+     
    }
 }
