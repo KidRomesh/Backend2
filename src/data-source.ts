@@ -11,9 +11,8 @@ import { Task } from "./entity/Task"
 
 export const AppDataSource = new DataSource({
     type: "mongodb",
-    database: "Backend",
-    // url: "mongodb+srv://KidRomesh:Rdk2001@cluster0.wlumh3o.mongodb.net/test",
-    // useNewUrlParser:true,
+    url: "mongodb+srv://KidRomesh:Rdk2001@cluster0.wlumh3o.mongodb.net/test",
+    useNewUrlParser:true,
     synchronize: false,
     logging: true,
     useUnifiedTopology: true,
